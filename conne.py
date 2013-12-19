@@ -5,7 +5,7 @@ from kazoo.client import KazooClient,KazooState
 
 logging.basicConfig(level=logging.DEBUG)
 
-zk = KazooClient("xx.96.185.1:2181,xx.96.185.2:2181",timeout=500,max_retries=1)
+zk = KazooClient("x.24.79.51:2181,x.24.79.53:2181",timeout=500,max_retries=1)
 zk.start()
 
 def listener(state):
