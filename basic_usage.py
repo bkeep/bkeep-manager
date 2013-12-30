@@ -48,7 +48,7 @@ print("Version: %s, data: %s" % (stat.version, data.decode("utf-8")))
 # 打印子节点
 children = zk.get_children("/my/favorite")
 print("There are %s children with names %s" % (len(children), children))
-
+ 
 #更新节点数据
 zk.set("/my/favorite", b"some data")
 
